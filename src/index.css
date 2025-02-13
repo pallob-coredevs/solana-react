@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-button-background-primary: #ed4a26;
+  --color-button-label-primary: #fff;
+  --color-button-label-secondary: #ed4a26;
+  --color-jet-black-50: #222222;
+  --color-jet-black-200: #181818;
+  --color-text-secondary: #bfbfbf;
+  --color-border-secondary: #8c8c8c;
+  --font-sans: "Inter", sans-serif;
+}
+
+.button-primary {
+  @apply px-6 py-3 rounded-lg font-semibold bg-button-background-primary text-button-label-primary;
+}
+
+.button-secondary {
+  @apply px-6 py-3 rounded-lg font-semibold border border-button-label-secondary text-button-label-secondary;
+}
+
+.input-primary {
+  @apply w-full border border-border-secondary rounded-lg py-2 px-3 focus:outline-none text-text-secondary text-sm;
+}
+
+html {
+  background-color: #121212;
+}
+
+body {
+  padding: 20px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #222 inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px #222 inset !important;
+}
