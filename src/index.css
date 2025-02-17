@@ -4,7 +4,6 @@
 @theme {
   --color-button-background-primary: #ed4a26;
   --color-button-label-primary: #fff;
-  --color-button-label-secondary: #ed4a26;
   --color-jet-black-50: #222222;
   --color-jet-black-200: #181818;
   --color-text-secondary: #bfbfbf;
@@ -13,15 +12,19 @@
 }
 
 .button-primary {
-  @apply px-6 py-3 rounded-lg font-semibold bg-button-background-primary text-button-label-primary;
+  @apply px-6 py-3 rounded-lg font-semibold bg-button-background-primary text-button-label-primary flex gap-2.5;
 }
 
 .button-secondary {
-  @apply px-6 py-3 rounded-lg font-semibold border border-button-label-secondary text-button-label-secondary;
+  @apply px-6 py-3 rounded-lg font-semibold bg-jet-black-200 border border-border-secondary text-button-label-primary flex gap-2.5;
 }
 
 .input-primary {
   @apply w-full border border-border-secondary rounded-lg py-2 px-3 focus:outline-none text-text-secondary text-sm;
+}
+
+.input-otp {
+  @apply py-2 rounded border-2 border-border-secondary focus:border-none focus:outline-2 focus:outline-button-background-primary text-center text-button-background-primary font-semibold w-11;
 }
 
 html {

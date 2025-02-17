@@ -1,11 +1,17 @@
 /* eslint-disable react/prop-types */
 
-const Button = ({ variant = "button-primary", className = "", children, ...props }) => {
+const Button = ({
+  name,
+  variant = "button-primary",
+  Icon,
+  className = "",
+  children,
+  ...props
+}) => {
   return (
-    <button
-    className={`${variant} ${className}`}
-      {...props}
-    >
+    <button className={`${variant} ${className}`} {...props}>
+      {Icon && <Icon />}
+      {name}
       {children}
     </button>
   );

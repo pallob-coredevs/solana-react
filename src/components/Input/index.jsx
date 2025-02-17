@@ -25,7 +25,7 @@ const Input = ({
       {label && (
         <label className="text-white text-sm font-semibold">{label}</label>
       )}
-      <div className={`relative flex items-center ${className}`}>
+      <div className={`relative flex items-center justify-center ${className}`}>
         {icon && iconPosition === "left" && (
           <span className="absolute left-3">{icon}</span>
         )}
